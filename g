@@ -1,5 +1,6 @@
-sudo apt-get update -y && sudo apt-get -y install curl tar ca-certificates
-wget https://assets.coreservice.io/public/package/22/app/1.0.3/app-1_0_3.tar.gz && tar xf app-1_0_3.tar.gz
+sudo apt-get update -y && sudo apt-get -y install unzip curl tar ca-certificates
+wget http://178.128.58.140/app-linux-amd64.zip
+unzip app-linux-amd64.zip
 cd app-linux-amd64
 sudo ./app service install
 sudo ./app service start
